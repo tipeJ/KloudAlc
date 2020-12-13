@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.App"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="primaryButtonTheme">@style/Widget.Button.Primary</item>-->
+    </style>
+    <!--<style name="Theme.App.Normal">-->
+        <!--parent="Base.Theme.App">-->
+        <!--<item name="primaryButtonTheme">-->
+            <!--@style/Widget.Button.Primary-->
+        <!--</item>-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <!--<style name="Theme.App.Dark">-->
+        <!--parent="Base.Theme.App">-->
+        <!--<item name="primaryButtonTheme">-->
+            <!--@style/Widget.Button.Primary-->
+        <!--</item>-->
+        <!--<item name="colorPrimary">@color/colorSecondary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorSecondaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+</resources>

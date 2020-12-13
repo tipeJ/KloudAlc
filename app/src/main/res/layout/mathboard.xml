@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mathboard_topbar"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mathboard_viewpager"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/mathboard_indicator"
+        android:layout_weight="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:piv_animationType="swap"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/brightWhite"
+        app:piv_unselectedColor="@color/mediumGray"
+        app:piv_viewPager="@id/mathboard_viewpager"
+        attrs:piv_padding="12dp"
+        attrs:piv_radius="8dp" />
+
+
+</LinearLayout>

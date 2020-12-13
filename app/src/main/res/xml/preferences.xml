@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="wallpaper_switch"
+        android:title="Wallpaper"
+        android:summary="Enables Wallpaper Background"
+        android:defaultValue="false"
+        />
+    <EditTextPreference
+        android:key="wallpaper_url"
+        android:title="Wallpaper source"
+        android:summary="Enter image source URL"
+        android:enabled="false"
+        android:defaultValue="https://i.imgur.com/Tfbu61O.jpg"
+        />
+    <ListPreference
+        android:key="constants_gravity"
+        android:title="Constants Title Gravity"
+        android:summary="Choose the gravity for constant titles"
+        android:entries="@array/preferences_constant_gravity_options"
+        android:entryValues="@array/preferences_constant_gravity_options_data"
+        android:defaultValue="1"
+        />
+    <SwitchPreference
+        android:key="functions_enable_rowlength"
+        android:title="Override row length"
+        android:summary="Enables custom row length"
+        android:defaultValue="false"
+        />
+    <EditTextPreference
+        android:key="functions_rowlength"
+        android:title="Button Row Length"
+        android:summary="Enter the button row length for functions (Use at own risk)"
+        android:enabled="false"
+        android:defaultValue="4"
+        />
+</PreferenceScreen>

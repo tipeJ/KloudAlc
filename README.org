@@ -1,0 +1,2 @@
+* About
+This is a simple calculator app written with Kotlin. This is a somewhat old project, but I thought I'd add it here anyways.

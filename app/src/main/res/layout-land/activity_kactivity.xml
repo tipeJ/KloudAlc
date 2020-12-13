@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/kactivity_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/kactivity_fragment"
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+
+        app:layout_constraintHorizontal_weight="12"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/kactivity_tabar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/kactivity_tabar"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+
+        app:layout_constraintHorizontal_weight="1"
+
+        app:layout_constraintVertical_weight="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/kactivity_fragment"
+        />
+
+    <com.yade.kloudalc.Views.RectButton
+        app:layout_constraintStart_toStartOf="@id/kactivity_fragment"
+        app:layout_constraintTop_toTopOf="@id/kactivity_fragment"
+
+        android:id="@+id/kactivity_menu"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_more_horiz_black_24dp"
+        />
+</android.support.constraint.ConstraintLayout>

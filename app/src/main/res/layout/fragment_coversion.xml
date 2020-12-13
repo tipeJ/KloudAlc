@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/conversion_switcher"
+        android:background="@color/colorAccent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="0dp"
+        android:layout_height="50dp"/>
+    <com.yade.kloudalc.Views.MathInput
+        android:id="@+id/conversion_upperinput"
+        android:text="upperInput"
+        android:textSize="15pt"
+
+        app:layout_constraintTop_toBottomOf="@id/conversion_switcher"
+        app:layout_constraintStart_toEndOf="@id/conversion_upperUnitSwitcher"
+        app:layout_constraintEnd_toStartOf="@id/conversion_upperUnit"
+        app:layout_constraintHorizontal_weight="5"
+
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/conversion_upperUnitSwitcher"
+
+        app:layout_constraintTop_toTopOf="@id/conversion_upperinput"
+        app:layout_constraintBottom_toTopOf="@id/conversion_lowerUnitSwitcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conversion_upperinput"
+        app:layout_constraintHorizontal_weight="1"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:id="@+id/conversion_upperUnit"
+
+        app:layout_constraintStart_toEndOf="@id/conversion_upperinput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conversion_switcher"
+        app:layout_constraintBottom_toTopOf="@id/conversion_lowerinput"
+
+        android:text="unit"
+        android:textSize="8pt"
+        android:gravity="center|bottom"
+
+        android:paddingEnd="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <com.yade.kloudalc.Views.MathInput
+        android:id="@+id/conversion_lowerinput"
+        android:text="lowerInput"
+        android:textSize="15pt"
+
+        app:layout_constraintTop_toBottomOf="@id/conversion_upperinput"
+        app:layout_constraintStart_toEndOf="@id/conversion_lowerUnitSwitcher"
+        app:layout_constraintEnd_toStartOf="@id/conversion_lowerUnit"
+        app:layout_constraintHorizontal_weight="8"
+
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/conversion_lowerUnitSwitcher"
+
+        app:layout_constraintTop_toTopOf="@id/conversion_lowerinput"
+        app:layout_constraintBottom_toTopOf="@id/conversion_mathboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conversion_upperinput"
+        app:layout_constraintHorizontal_weight="1"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:id="@+id/conversion_lowerUnit"
+
+        app:layout_constraintStart_toEndOf="@id/conversion_lowerinput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conversion_upperinput"
+        app:layout_constraintBottom_toTopOf="@id/conversion_mathboard"
+
+        android:text="unit"
+        android:textSize="8pt"
+        android:gravity="center|bottom"
+
+        android:paddingEnd="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <FrameLayout
+        android:id="@+id/conversion_mathboard"
+        android:background="@color/colorPrimaryDark"
+
+        app:layout_constraintTop_toBottomOf="@id/conversion_lowerinput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

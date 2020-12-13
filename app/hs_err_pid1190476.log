@@ -1,0 +1,157 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=1190476, tid=0x0000000000122628
+#
+# JRE version:  (8.0_152-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.152-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002f14800):  JavaThread "Unknown thread" [_thread_in_vm, id=1189416, stack(0x0000000002e10000,0x0000000002f10000)]
+
+Stack: [0x0000000002e10000,0x0000000002f10000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002f14800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1189416, stack(0x0000000002e10000,0x0000000002f10000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 18944K, used 327K [0x00000000feb00000, 0x0000000100000000, 0x0000000100000000)
+  eden space 16384K, 2% used [0x00000000feb00000,0x00000000feb51ec8,0x00000000ffb00000)
+  from space 2560K, 0% used [0x00000000ffd80000,0x00000000ffd80000,0x0000000100000000)
+  to   space 2560K, 0% used [0x00000000ffb00000,0x00000000ffb00000,0x00000000ffd80000)
+ ParOldGen       total 44032K, used 0K [0x00000000fc000000, 0x00000000feb00000, 0x00000000feb00000)
+  object space 44032K, 0% used [0x00000000fc000000,0x00000000fc000000,0x00000000feb00000)
+ Metaspace       used 772K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 73K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000001390000,0x00000000013c0000] byte_map_base: 0x0000000000bb0000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000066003950
+ Begin Bits: [0x00000000127d0000, 0x00000000128d0000)
+ End Bits:   [0x00000000128d0000, 0x00000000129d0000)
+
+Polling page: 0x0000000001360000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000003010000, 0x0000000003280000, 0x0000000012010000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.022 loading class java/lang/Short
+Event: 0.022 loading class java/lang/Short done
+Event: 0.022 loading class java/lang/Integer
+Event: 0.022 loading class java/lang/Integer done
+Event: 0.022 loading class java/lang/Long
+Event: 0.022 loading class java/lang/Long done
+Event: 0.022 loading class java/lang/NullPointerException
+Event: 0.022 loading class java/lang/NullPointerException done
+Event: 0.022 loading class java/lang/ArithmeticException
+Event: 0.022 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff7f8850000 - 0x00007ff7f8881000 	C:\Program Files\Android\Android Studio\jre\bin\java.exe
+0x00007ff9794b0000 - 0x00007ff97968b000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff9789d0000 - 0x00007ff978a7e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff9761a0000 - 0x00007ff9763e9000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff9790a0000 - 0x00007ff979141000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff978a80000 - 0x00007ff978b1d000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff978650000 - 0x00007ff9786a9000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff9791e0000 - 0x00007ff979305000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff978300000 - 0x00007ff97844a000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff976180000 - 0x00007ff97619e000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff979150000 - 0x00007ff979177000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff9765f0000 - 0x00007ff976777000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff9763f0000 - 0x00007ff97648a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff976490000 - 0x00007ff976586000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff96a4e0000 - 0x00007ff96a747000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.15063.483_none_26002d27e7c744a2\COMCTL32.dll
+0x00007ff978bd0000 - 0x00007ff978ec9000 	C:\WINDOWS\System32\combase.dll
+0x00007ff9767d0000 - 0x00007ff97683a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff978800000 - 0x00007ff97882d000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000006a420000 - 0x000000006a4f2000 	C:\Program Files\Android\Android Studio\jre\jre\bin\msvcr100.dll
+0x0000000065840000 - 0x000000006607e000 	C:\Program Files\Android\Android Studio\jre\jre\bin\server\jvm.dll
+0x00007ff979420000 - 0x00007ff979428000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff96f080000 - 0x00007ff96f089000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff9785e0000 - 0x00007ff97864c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff96f5d0000 - 0x00007ff96f5f3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff971770000 - 0x00007ff97177a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff96f5a0000 - 0x00007ff96f5cb000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff976780000 - 0x00007ff9767c9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ff96c030000 - 0x00007ff96c03f000 	C:\Program Files\Android\Android Studio\jre\jre\bin\verify.dll
+0x00007ff95dff0000 - 0x00007ff95e019000 	C:\Program Files\Android\Android Studio\jre\jre\bin\java.dll
+0x00007ff9667c0000 - 0x00007ff9667d6000 	C:\Program Files\Android\Android Studio\jre\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx64M -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: com.google.devtools.build.android.desugar.Desugar --input E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\17.jar --output E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\desugar\debug\20.jar --input E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\14.jar --output E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\desugar\debug\17.jar --input E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\9.jar --output E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\desugar\debug\12.jar --input E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\11.jar --output E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\desugar\debug\14.jar --input E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\15.jar --output E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\desugar\debug\18.jar --input E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\0.jar --output E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\desugar\debug\3.jar --classpath_entry E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\classes\debug --classpath_entry E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\tmp\kotlin-classes\debug --classpath_entry E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\tmp\kapt3\classes\debug --classpath_entry E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transforms\stackFramesFixer\debug\0.jar --classpath_entry E:\ProjectFiles\AndroidStudio\KloudAlc\KloudAlc\app\build\intermediates\transfor
+java_class_path (initial): C:\Users\Tiitus\AppData\Local\Temp\desugar_deploy.jar5683840609147183890
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files (x86)\Java\jre1.8.0_65\lib\ext\QTJava.zip
+PATH=C:\Python27\;C:\Python27\Scripts;c:\programdata\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\livestreamer;c:\program files\common files\autodesk shared\;c:\program files (x86)\autodesk\backburner\;c:\program files\next limit\rfconnect 2015 for maya;c:\program files (x86)\quicktime\qtsystem\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;d:\git\cmd;c:\program files (x86)\streamlink\bin;c:\programdata\chocolatey\bin;C:\Program Files (x86)\Calibre2\;C:\Users\Tiitus\AppData\Local\Streamlink\bin;C:\Program Files\FileBot\;C:\Users\Tiitus\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Tiitus\AppData\Local\Programs\Python\Python36-32\;C:\Users\Tiitus\AppData\Local\Microsoft\WindowsApps;C:\Users\Tiitus\AppData\Local\.meteor\;C:\Users\Tiitus\AppData\Local\GitHubDesktop\bin
+USERNAME=Tiitus
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 15063 (10.0.15063.296)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 16661448k(1347336k free), swap 21781448k(6132k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.152-b01) for windows-amd64 JRE (1.8.0_152-release-915-b01), built by "builder" with MS VC++ 10.0 (VS2010)
+
+time: Thu Jan 18 22:01:02 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
